@@ -5,8 +5,8 @@ import { PORT } from './helpers/constants';
 
 const app: Express = express();
 
-app.use('/', router);
 app.use(cors());
+app.use('/', router);
 
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
