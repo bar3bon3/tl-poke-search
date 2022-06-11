@@ -15,7 +15,7 @@ npm start
 
 The command may take some time, once completed the application will be available at [http://localhost:3000](http://localhost:3000).
 
-Please be aware that for the Full Stack application to work correctly you need to have the backend up and running, please see [poke-search-backend/README.md](poke-search-backend/README.md).
+Please be aware that for the Full Stack application to work correctly you need to have the backend up and running, please see [poke-search-backend/README.md](../poke-search-backend/README.md).
 
 ## Available Scripts
 
