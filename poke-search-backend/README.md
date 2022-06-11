@@ -30,12 +30,12 @@ Builds the server for production to the `dist` folder.
 
 ### `npm start`
 
-Runs the production server from the `dist` folder.
+Runs the production server from the `dist` folder. 
 Server will be available at `http://localhost:3001`
 
 ### `npm run dev`
 
-Runs the server in development mode.
+Runs the server in development mode. 
 Server will be available at `http://localhost:3001`
 
 The server will reload if you make edits.
