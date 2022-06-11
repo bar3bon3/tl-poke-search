@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./poke-search-backend
+      dockerfile: ./Dockerfile
+    image: "tl/poke-search-backend"
+    ports:
+      - "3001:3001"
+  frontend:
+    build:
+      context: ./poke-search-frontend
+      dockerfile: ./Dockerfile
+    image: "tl/poke-search-frontend"
+    ports:
+      - "3000:3000"

@@ -1,0 +1,14 @@
+@import 'variables.scss';
+
+.history {
+  &-wrapper {
+    width: 100%;
+  }
+
+  ul {
+    li {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

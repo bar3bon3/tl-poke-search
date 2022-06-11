@@ -1,0 +1,133 @@
+@import 'variables.scss';
+
+// Base reset
+body {
+  margin: 0;
+  color: $primary-color;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: $base-margin 0;
+}
+
+ul, ol {
+  margin: $base-margin 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+a, button {
+  color: $primary-color;
+  font-style: inherit;
+  font-size: inherit;
+}
+
+button {
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+p, nav {
+  margin: $base-margin 0;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+// Layout
+.row {
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: $small-screen) {
+    flex-wrap: wrap;
+  }
+
+  &.h-50 {
+    height: 50%;
+  }
+
+  @media screen and (max-width: $small-screen) {
+    &.h-small-20 {
+      height: 20%;
+    }
+    &.h-small-80 {
+      height: 80%;
+    }
+  }
+}
+
+// Loader
+.loader {
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  &:after {
+    content: " ";
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid $secondary-color;
+    border-color: $secondary-color transparent $secondary-color transparent;
+    animation: loader-dual-ring 1s linear infinite;
+  }
+
+  @keyframes loader-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// Text clip animation
+.animated-text-clip {
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

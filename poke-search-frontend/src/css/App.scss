@@ -1,0 +1,38 @@
+@import 'variables.scss';
+
+.app {
+  height: 100vh;
+  box-sizing: border-box;
+  padding: $large-padding;
+  max-width: $app-width;
+  margin: 0 auto;
+
+  &-main {
+    margin: $large-margin 0;
+    align-self: flex-end;
+  }
+
+  &-sidebar {
+    text-align: right;
+    margin: $large-margin 0;
+    width: $sidebar-width;
+
+    @media screen and (max-width: $small-screen) {
+      margin: 0;
+      text-align: left;
+      align-self: flex-end;
+      min-height: 132px;
+    }
+  }
+
+  &-result {
+    margin: $large-margin 0;
+    width: calc(100% - $sidebar-width);
+
+    @media screen and (max-width: $small-screen) {
+      margin: 0;
+      width: 100%;
+      align-self: flex-end;
+    }
+  }
+}

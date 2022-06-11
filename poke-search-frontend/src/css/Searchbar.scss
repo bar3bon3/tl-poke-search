@@ -1,0 +1,42 @@
+@import 'variables.scss';
+
+.searchbar {
+
+  &-input {
+    font-family: inherit;
+    font-size: 8rem;
+    padding: $large-padding 0;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: $base-border;
+
+    @media screen and (max-width: $small-screen) {
+      font-size: 4rem;
+    }
+  }
+
+  &-input:focus {
+    outline: none;
+  }
+
+  &-input::-webkit-search-cancel-button,
+  &-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  &-info {
+    color: $secondary-color;
+    display: inline-block;
+    margin-left: $base-margin;
+    font-style: italic;
+    width: 100%;
+    margin: 0 auto;
+    padding: $large-padding 0;
+    text-align: right;
+
+    button {
+      display: inline;
+    }
+  }
+}
