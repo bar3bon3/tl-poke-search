@@ -6,7 +6,7 @@ The fastest way to run the application is via `Docker Compose`.
 
 Installation instructions can be found [here](https://docs.docker.com/compose/install/), if you already have `Docker Desktop` installed on your machine you should be good to go.
 
-Run the application from the project root with: 
+Run the application from the project root with:
 
 ```sh
 docker-compose up
@@ -62,4 +62,4 @@ It is ok as an MVP but there are a lot of improvements:
 - Test components in isolation
 - Better use of Typescript annotations
 - Better error handling
-- Code commenting was minimal as per React guidelines, development team may enforce different guidelines
+- Code commenting is minimal as per React guidelines, development team may enforce different guidelines

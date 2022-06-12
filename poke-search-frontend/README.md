@@ -4,9 +4,9 @@
 
 The application can be executed in development mode via `Node.js`.
 
-Installation instructions can be found [here](https://nodejs.org/it/download/).
+Installation instructions can be found [here](https://nodejs.org/it/download/), recommended version `16.15.1`.
 
-Run the application from the `poke-search-frontend` folder with: 
+Run the application from the `poke-search-frontend` directory with:
 
 ```sh
 npm i

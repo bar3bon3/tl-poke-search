@@ -4,9 +4,9 @@
 
 The server can be executed via `Node.js`.
 
-Installation instructions can be found [here](https://nodejs.org/it/download/).
+Installation instructions can be found [here](https://nodejs.org/it/download/), recommended version `16.15.1`.
 
-Run the server from the `poke-search-backend` folder with: 
+Run the server from the `poke-search-backend` directory with:
 
 ```sh
 npm i
@@ -17,7 +17,7 @@ npm start
 The command may take some time, once completed the server will be available at `http://localhost:3001`.
 
 ```sh
-curl http://localhost:3001/pokemon/charizard
+curl -s http://localhost:3001/pokemon/charizard
 ```
 
 ## Available Scripts
