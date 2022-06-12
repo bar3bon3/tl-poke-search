@@ -58,7 +58,7 @@ It was a fun project, and I'm happy with the outcome, not really dificult even i
 
 It is ok as an MVP but there are a lot of improvements:
 
-- Better React components decoupling and configuration trough props
+- Better React components decoupling and configuration via props
 - Test components in isolation
 - Better use of Typescript annotations
 - Better error handling
