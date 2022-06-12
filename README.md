@@ -38,7 +38,7 @@ Full Stack application that given a Pokemon name, returns its description and it
 
 ## Troubleshooting
 
-If you are having any issues running the Dockerized version of the application you can always run the frontend and the backend individually by follwing the instructions provided in each folder:
+If you are having any issues running the Dockerized version of the application you can always run the frontend and the backend individually by follwing the instructions provided in each README:
 
 - [poke-search-backend/README.md](poke-search-backend/README.md)
 - [poke-search-frontend/README.md](poke-search-frontend/README.md)
