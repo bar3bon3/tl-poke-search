@@ -25,7 +25,7 @@ function History({ query }: HistoryProps) {
     <div className="history">
       {history.length > 0 && (
         <div className="history-wrapper">
-          <h4>Recent search</h4>
+          <h4>Recent searches</h4>
           <nav>
             <ul data-testid="history-list">
               {history.map((term) => (
