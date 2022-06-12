@@ -32,6 +32,7 @@ Full Stack application that given a Pokemon name, returns its description and it
 
 - `node.js` + `express.js`
 - `axios` for HTTP requests
+- `apicache` for API requests caching
 - `cors` for CORS handling
 - `ts-jest`, `supertest`, `msw`, for tests and API mocking
 
@@ -62,4 +63,5 @@ It is ok as an MVP but there are a lot of improvements:
 - Test components in isolation
 - Better use of Typescript annotations
 - Better error handling
+- Parsing memoization
 - Code commenting is minimal as per React guidelines, development team may enforce different guidelines
